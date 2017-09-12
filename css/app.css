@@ -285,6 +285,7 @@
 			}
 
 			.hamburger img{
+				cursor: pointer;
 				height: 2em;
 				margin-right: 0.5em;
 				position: relative;

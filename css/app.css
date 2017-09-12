@@ -133,10 +133,6 @@
         -webkit-transform: translateY(-100%);
 	}
 
-	.nav-half{
-		bottom: 50vh;
-	}
-
 	.main-nav-scrolled {
 	    color: black;
 	    position: fixed;

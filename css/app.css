@@ -270,6 +270,10 @@
 				display: none;	
 			}
 
+			.hamburger a{
+				cursor: pointer;
+			}
+
 			@media screen and (max-width: 63.9375em) {
 				.hamburger{
 					display: flex;
@@ -285,6 +289,7 @@
 			}
 
 			.hamburger img{
+				cursor: pointer;
 				height: 2em;
 				margin-right: 0.5em;
 				position: relative;

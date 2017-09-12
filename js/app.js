@@ -91,7 +91,8 @@
 
 //MOBILE NAV
 
-  $('.hamburger a').click(function(){
+  $('.hamburger').click(function(){
+    alert();
     $(".mobile-nav").animate({width:'toggle'},350);
   });
 

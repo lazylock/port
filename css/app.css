@@ -265,13 +265,10 @@
 
 			.hamburger{
 				cursor: pointer;
+				padding-right: 0.5em;
 				z-index: 600;
 				height: 100%;
 				display: none;	
-			}
-
-			.hamburger a{
-				cursor: pointer;
 			}
 
 			@media screen and (max-width: 63.9375em) {
@@ -289,9 +286,7 @@
 			}
 
 			.hamburger img{
-				cursor: pointer;
 				height: 2em;
-				margin-right: 0.5em;
 				position: relative;
 			}
 

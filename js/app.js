@@ -91,10 +91,8 @@
 
 //MOBILE NAV
 
-  $('.active').change(function(){
-    if($('.active').css('display') == 'block'){
-      $(".mobile-nav").animate({width:'toggle'},350);
-    }
+  $('.hamburger').change(function(){
+    $(".mobile-nav").animate({width:'toggle'},350);
   });
 
   $('.x').click(function(){

@@ -119,9 +119,10 @@
 	    width: 100%;
 	    z-index: 100;
 	    color: white;
-	    background-color: transparent;
-	    position: absolute;
+	    background-color: transparent
 	    overflow: hidden;
+	    bottom: 0;
+	    position: fixed;
 
 	    -webkit-transition: all 0.15s ease-in-out;
 	    -moz-transition: all 0.15s ease-in-out;
@@ -265,7 +266,6 @@
 
 			.hamburger{
 				cursor: pointer;
-				padding-right: 1em;
 				z-index: 600;
 				height: 100%;
 				display: none;	
@@ -285,6 +285,7 @@
 
 			@media screen and (max-width: 63.9375em) {
 				.hamburger{
+					padding-right: 0.5em;
 					display: flex;
 				}
 
@@ -344,6 +345,10 @@
 			}
 
 			@media screen and (max-width: 39.9375em) {
+				.hamburger {
+					padding-right: 1em;
+				}
+
 				.mobile-menu {
 			        font-size: 0.65em;
 			    }
@@ -371,13 +376,13 @@
 
 	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
 		.main {
-			padding: 12em 5em 12em 5em;
+			padding: 8em 5em 8em 5em;
 		}
 	}
 
 	@media screen and (max-width: 39.9375em) {
 		.main, .main-half {
-			padding: 8em 1em 8em 1em;
+			padding: 5em 1em 5em 1em;
 		}
 	}
 

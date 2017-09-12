@@ -46,6 +46,11 @@
     } else {
       mn.removeClass(mns);
     }
+
+    if($(this).scrollTop() != 0){
+      $('.top-bar').css("bottom",'');
+      $('.top-bar').css("position",'absolute');
+    }
   });
 
   function em(input) {

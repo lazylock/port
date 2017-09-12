@@ -265,10 +265,22 @@
 
 			.hamburger{
 				cursor: pointer;
-				padding-right: 0.5em;
+				padding-right: 1em;
 				z-index: 600;
 				height: 100%;
 				display: none;	
+				font-weight: 2em;
+				font-style: bold;
+
+				-webkit-transform:scale(2,1.5); /* Safari and Chrome */
+			    -moz-transform:scale(2,1.5); /* Firefox */
+			    -ms-transform:scale(2,1.5); /* IE 9 */
+			    -o-transform:scale(2,1.5); /* Opera */
+			    transform:scale(2,1.5); /* W3C */
+			}
+
+			.hamburger:active {
+				color: rgba(255, 187, 41, 1);
 			}
 
 			@media screen and (max-width: 63.9375em) {
@@ -283,36 +295,6 @@
 				.main-nav-scrolled {
 					top: 4em;
 				}
-			}
-
-			.hamburger img{
-				height: 2em;
-				position: relative;
-			}
-
-			.hamburger img.default{
-				-webkit-filter: invert(100%);
-			    filter: invert(100%);
-			}
-
-			.main-nav-scrolled .hamburger img{
-				filter: none;
-			}
-
-			.hamburger img.active{
-				display: none;
-			}
-
-			.hamburger:active img.active{
-				display: block;
-			}
-
-			.hamburger:active img.default{
-				display: none;
-			}
-
-			.hamburger:hover img{
-				cursor: pointer;
 			}
 
 		/*TOGGLE NAV*/

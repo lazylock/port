@@ -87,7 +87,7 @@
 		}
 	}
 
-	html, body, header { 
+	html, body, header, .hero { 
 		height: 100%;
 	}
 

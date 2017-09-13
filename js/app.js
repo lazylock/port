@@ -117,6 +117,6 @@
     $(".mobile-tags").animate({width:'toggle'},350);
   });
 
-  $('.all').click(function(){
+  $('.mobile-nav .all').click(function(){
     $(".mobile-nav").animate({width:'toggle'},350);
   });

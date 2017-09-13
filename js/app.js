@@ -34,7 +34,7 @@
   $(document).ready(function() {
 
     if($('header').css('z-index') == '-2' || $('header').css('z-index') == '-3'){
-      toggleScrolled(22);
+      toggleScrolled(4);
     } else {
       toggleScrolled(6);
     }
@@ -44,7 +44,7 @@
   $(window).scroll(function() {
 
     if($('header').css('z-index') == '-2' || $('header').css('z-index') == '-3'){
-      toggleScrolled(22);
+      toggleScrolled(4);
     } else {
       toggleScrolled(6);
     }

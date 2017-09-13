@@ -29,7 +29,7 @@
 
   var mn = $(".main-nav");
       mns = "main-nav-scrolled";
-      hdr = $('header').height();
+      hero = $('.hero').height();
 
   $(document).ready(function() {
 
@@ -53,8 +53,8 @@
 
   function toggleScrolled(input){
 
-    hdr = $('header').height();
-    if( $(window).scrollTop() > hdr - em(input) ) {
+    hero = $('.hero').height();
+    if( $(window).scrollTop() > hero - em(input) ) {
       mn.addClass(mns);
     } else {
       mn.removeClass(mns);

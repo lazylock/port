@@ -40,6 +40,7 @@
   });
 
   $(window).scroll(function() {
+    $('.hero').css('height','100vh');
     hdr = $('header').height();
     if( $(this).scrollTop() > hdr - em(6) ) {
       mn.addClass(mns);

@@ -2,11 +2,10 @@
 	body {
 	    background-color: black;
 	    font-family: 'Montserrat', sans-serif;
-	}
-
-	body {
     	opacity: 1;
     	transition: 2s opacity;
+
+    	z-index: -1;
 	}
 
 	body.fade-out {
@@ -74,6 +73,20 @@
 		border-color: rgba(255, 187, 41, 1);
 	}
 
+	/* Small only */
+	@media screen and (max-width: 39.9375em) {
+		body {
+			z-index: -3;
+		}
+	}
+
+	/* Medium only */
+	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+		body {
+			z-index: -2;
+		}
+	}
+
 /*HERO*/
 
 	#hero-index, #hero-example{
@@ -102,6 +115,12 @@
 
 	.hero-half{
 		height: 50vh;
+	}
+
+	@media screen and (max-width: 63.9375em) {
+		.hero{
+			height: 50vh;
+		}
 	}
 
 /*MENU BAR*/
@@ -376,12 +395,14 @@
 	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
 		.main {
 			padding: 8em 5em 8em 5em;
+			margin-top: 50vh;
 		}
 	}
 
 	@media screen and (max-width: 39.9375em) {
 		.main, .main-half {
 			padding: 5em 1em 5em 1em;
+			margin-top: 50vh;
 		}
 	}
 
@@ -515,17 +536,17 @@
 
 	@media screen and (max-width: 39.9375em) {
 		.post {
-			z-index: 3;
 			font-size: 1em;
 			padding: 8em 2em 8em 2em;
+			margin-top: 50vh;
 		}
 	}
 
 	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
 		.post {
-			z-index: 2;
 			font-size: 1.25em;
 			padding: 12em 4em 12em 4em;
+			margin-top: 50vh;
 		}
 	}
 

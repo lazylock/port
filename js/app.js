@@ -6,9 +6,9 @@
 
   $(document).ready(function() {
 
-    if ($('body').css('z-index') == '-3'){
+    if ($('header').css('z-index') == '-3'){
         projectOffset = em(6);
-    } else if ($('body').css('z-index') == '-2'){
+    } else if ($('header').css('z-index') == '-2'){
         projectOffset = em(12);
     }
 
@@ -33,8 +33,8 @@
 
   $(document).ready(function() {
 
-    if(('body').css('z-index') < '-1'){
-      toggleScrolled(4);
+    if($('header').css('z-index') == '-2' || $('header').css('z-index') == '-3'){
+      toggleScrolled(22);
     } else {
       toggleScrolled(6);
     }
@@ -42,10 +42,9 @@
   });
 
   $(window).scroll(function() {
-    hdr = $('header').height();
 
-    if(('body').css('z-index') < '-1'){
-      toggleScrolled(4);
+    if($('header').css('z-index') == '-2' || $('header').css('z-index') == '-3'){
+      toggleScrolled(22);
     } else {
       toggleScrolled(6);
     }
@@ -53,6 +52,8 @@
   });
 
   function toggleScrolled(input){
+
+    hdr = $('header').height();
     if( $(window).scrollTop() > hdr - em(input) ) {
       mn.addClass(mns);
     } else {
@@ -69,10 +70,6 @@
       var emSize = parseFloat($("body").css("font-size"));
       return (Math.floor(input / emSize));
   }
-
-  $(window).resize(function() {
-    $('.top-bar').animate({bottom},'350');
-  });
 
 //CONTENT
 

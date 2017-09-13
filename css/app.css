@@ -75,14 +75,14 @@
 
 	/* Small only */
 	@media screen and (max-width: 39.9375em) {
-		body {
+		header {
 			z-index: -3;
 		}
 	}
 
 	/* Medium only */
 	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-		body {
+		header {
 			z-index: -2;
 		}
 	}
@@ -536,6 +536,7 @@
 
 	@media screen and (max-width: 39.9375em) {
 		.post {
+			z-index: -3;
 			font-size: 1em;
 			padding: 8em 2em 8em 2em;
 			margin-top: 50vh;
@@ -614,7 +615,7 @@
 	/* Small only */
 	@media screen and (max-width: 39.9375em) {
 		.contact {
-			padding: 8em 1em 8em 1em;
+			padding: 6em 1em 6em 1em;
 		}
 
 		form {
@@ -687,7 +688,7 @@
 	/* Small only */
 	@media screen and (max-width: 39.9375em) {
 		.about {
-			padding: 8em 1em 8em 1em;
+			padding: 5em 1em 5em 1em;
 		}
 
 		.about .desc::before{

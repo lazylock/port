@@ -87,10 +87,6 @@
 		}
 	}
 
-	html, body, header, .hero { 
-		height: 100%;
-	}
-
 /*HERO*/
 
 	#hero-index, #hero-example{
@@ -123,7 +119,7 @@
 
 	@media screen and (max-width: 63.9375em) {
 		.hero{
-			/*height: 50vh;*/
+			height: 50vh;
 		}
 	}
 
@@ -399,14 +395,14 @@
 	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
 		.main {
 			padding: 8em 5em 8em 5em;
-			/*margin-top: 50vh;*/
+			margin-top: 50vh;
 		}
 	}
 
 	@media screen and (max-width: 39.9375em) {
 		.main, .main-half {
 			padding: 5em 1em 5em 1em;
-			/*margin-top: 50vh;*/
+			margin-top: 50vh;
 		}
 	}
 

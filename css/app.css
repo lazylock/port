@@ -178,35 +178,35 @@
 	}
 
 	/*LOGO COLOR*/
-	#white-logo, #logo:visited #white-logo {
-		display: block;
-	}
-	#black-logo, #logo:visited #black-logo {
-		display: none;
-	}
-	#yellow-logo, #logo:visited #yellow-logo{
-		display: none;
-	}
+		#white-logo, #logo:visited #white-logo {
+			display: block;
+		}
+		#black-logo, #logo:visited #black-logo {
+			display: none;
+		}
+		#yellow-logo, #logo:visited #yellow-logo{
+			display: none;
+		}
 
-	.main-nav-scrolled #white-logo, #logo:visited #white-logo{
-		display: none;
-	}
-	.main-nav-scrolled #black-logo, #logo:visited #black-logo{
-		display: block;
-	}
-	.main-nav-scrolled #yellow-logo, #logo:visited #yellow-logo{
-		display: none;
-	}
+		.main-nav-scrolled #white-logo, #logo:visited #white-logo{
+			display: none;
+		}
+		.main-nav-scrolled #black-logo, #logo:visited #black-logo{
+			display: block;
+		}
+		.main-nav-scrolled #yellow-logo, #logo:visited #yellow-logo{
+			display: none;
+		}
 
-	#logo:hover #white-logo{
-		display: none;
-	}
-	#logo:hover #black-logo{
-		display: none;
-	}
-	#logo:hover #yellow-logo{
-		display: block;
-	}
+		#logo:hover #white-logo{
+			display: none;
+		}
+		#logo:hover #black-logo{
+			display: none;
+		}
+		#logo:hover #yellow-logo{
+			display: block;
+		}
 
 	.top-bar ul {
 	    background-color: transparent;
@@ -244,7 +244,7 @@
 
 	/*DROPDOWN*/
 
-		.cats:before {
+		.cats:hover:before {
 		    position:absolute;
 		    content:'';
 		    color: transparent;
@@ -256,7 +256,7 @@
 			visibility: hidden;
 		    opacity: 0;
 
-			top: 4em;
+			top: 5em;
 			left: 0;
 			width: 100vw;
 			height: auto;

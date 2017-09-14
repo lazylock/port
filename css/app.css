@@ -178,35 +178,57 @@
 	}
 
 	/*LOGO COLOR*/
-		#white-logo, #logo:visited #white-logo {
+		#white-logo {
 			display: block;
 		}
-		#black-logo, #logo:visited #black-logo {
+		#black-logo {
 			display: none;
 		}
-		#yellow-logo, #logo:visited #yellow-logo{
+		#yellow-logo {
 			display: none;
 		}
 
-		.main-nav-scrolled #white-logo, #logo:visited #white-logo{
+		.main-nav-scrolled #white-logo {
 			display: none;
 		}
-		.main-nav-scrolled #black-logo, #logo:visited #black-logo{
+		.main-nav-scrolled #black-logo {
 			display: block;
 		}
-		.main-nav-scrolled #yellow-logo, #logo:visited #yellow-logo{
+		.main-nav-scrolled #yellow-logo {
 			display: none;
 		}
 
-		#logo:hover #white-logo{
+		#logo:hover #white-logo {
 			display: none;
 		}
-		#logo:hover #black-logo{
+		#logo:hover #black-logo {
 			display: none;
 		}
-		#logo:hover #yellow-logo{
+		#logo:hover #yellow-logo {
 			display: block;
 		}
+
+		#logo:visited #white-logo {
+			display: block;
+		}
+		#logo:visited #black-logo {
+			display: none;
+		}
+		#logo:visited #yellow-logo{
+			display: none;
+		}
+
+		#logo:visited #white-logo {
+			display: none;
+		}
+		#logo:visited #black-logo {
+			display: block;
+		}
+		#logo:visited #yellow-logo {
+			display: none;
+		}
+
+
 
 	.top-bar ul {
 	    background-color: transparent;

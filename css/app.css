@@ -131,6 +131,16 @@
 	    font-weight: bold;
 	    letter-spacing: 0.1em;
 	    text-transform: uppercase;
+
+	    margin-top: auto;
+	    margin-bottom: auto;
+	}
+
+	.menu a img{
+		 height: auto;
+		 width: auto;
+		 max-height: 3em;
+		 max-width: 4em;
 	}
 
 	.top-bar {
@@ -141,7 +151,6 @@
 	    background-color: transparent;
 	    position: absolute;
 	    overflow: hidden;
-
 	    -webkit-transition: all 0.15s ease-in-out;
 	    -moz-transition: all 0.15s ease-in-out;
 	    -ms-transition: all 0.15s ease-in-out;
@@ -167,6 +176,37 @@
 	.main-nav-scrolled li {
 	    color: black;
 	}
+
+	/*LOGO COLOR*/
+		#white-logo, #logo:visited #white-logo {
+			display: block;
+		}
+		#black-logo, #logo:visited #black-logo {
+			display: none;
+		}
+		#yellow-logo, #logo:visited #yellow-logo{
+			display: none;
+		}
+
+		.main-nav-scrolled #white-logo, #logo:visited #white-logo{
+			display: none;
+		}
+		.main-nav-scrolled #black-logo, #logo:visited #black-logo{
+			display: block;
+		}
+		.main-nav-scrolled #yellow-logo, #logo:visited #yellow-logo{
+			display: none;
+		}
+
+		#logo:hover #white-logo{
+			display: none;
+		}
+		#logo:hover #black-logo{
+			display: none;
+		}
+		#logo:hover #yellow-logo{
+			display: block;
+		}
 
 	.top-bar ul {
 	    background-color: transparent;

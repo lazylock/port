@@ -46,7 +46,7 @@
 		width: 20em;
 		background-color: black;
 		border-color: black;
-		color: white;
+		color: white !important;
 
 		left: 50%;
 
@@ -95,6 +95,22 @@
 
 	#hero-contact, #hero-about, #hero-resume {
 	    background: url('../assets/contact.jpg') center center;
+	}
+
+	#hero-greidient {
+		background: url('../assets/greidient/greidient.jpg') center center;
+	}
+
+	#hero-apparel {
+		background: url('../assets/apparel/apparel.jpg') center center;
+	}
+
+	#hero-logos {
+		background: url('../assets/logos/logos.jpg') center center;
+	}
+
+	#hero-berlin {
+		background: url('../assets/berlin/berlin.jpg') center center;
 	}
 
 	#hero-contact:before, #hero-about:before, #hero-resume:before {
@@ -515,8 +531,10 @@
 	    display: block;
 	    position: absolute;
 	    color: white;
-	    font-size: 1.5em;
+	    font-size: 2em;
 	    font-weight: bold;
+	    text-align: center;
+	    letter-spacing: 2px;
 
 	    left: 50%;
 	    top: 50%;
@@ -530,11 +548,11 @@
 	.cell:hover p {
 	    opacity: 1;
 
-	    -webkit-transition: all 0.75s ease-in-out;
-	    -moz-transition: all 0.75s ease-in-out;
-	    -ms-transition: all 0.75s ease-in-out;
-	    -o-transition: all 0.75s ease-in-out;
-	    transition: all 0.75s ease-in-out;
+	    -webkit-transition: all 0.25s ease-in-out;
+	    -moz-transition: all 0.25s ease-in-out;
+	    -ms-transition: all 0.25s ease-in-out;
+	    -o-transition: all 0.25s ease-in-out;
+	    transition: all 0.25s ease-in-out;
 	}
 
 /*PROJECT*/
@@ -549,6 +567,7 @@
 		width: 100%;
 		height: auto;
 		padding: 20em;
+		padding-bottom: 10em;
 		background-color: white;
 		color: black;
 	}
@@ -556,12 +575,12 @@
 	.date{
 		text-align: center;
 		color: grey;
+		margin-bottom: 2em;
 	}
 
 	.title{
 		text-align: center;
-		font-size: 2em;
-		text-decoration: bold;
+		font-size: 3em;
 	}
 
 	article .image {
@@ -761,7 +780,7 @@
 
 /*RESUME*/
 
-	.title {
+	.head {
 		width: 100%;
 		margin-bottom: 2em;
 	}

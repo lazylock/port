@@ -90,7 +90,19 @@
 /*HERO*/
 
 	#hero-index, #hero-example{
-		background: url('../assets/berlin.JPG') center center;
+		background: darkred;
+		background: url('../assets/bg.jpg') center center;
+	}
+
+	#hero-index:before{
+	  position: absolute;
+	  content:" ";
+	  top:0;
+	  left:0;
+	  width:100%;
+	  height:100%;
+	  z-index:1;
+	  background-color: rgba(128,0,0,0.5);
 	}
 
 	#hero-contact, #hero-about, #hero-resume {
@@ -113,6 +125,10 @@
 		background: url('../assets/berlin/berlin.jpg') center center;
 	}
 
+	#hero-keyp {
+		background: url('../assets/keyp/hero.jpg') center center;
+	}
+
 	#hero-contact:before, #hero-about:before, #hero-resume:before {
 		content: '';
 		position: absolute;
@@ -133,9 +149,51 @@
 		height: 50vh;
 	}
 
+	#hero-text {
+	    display: block;
+	    position: absolute;
+	    color: white;
+	    font-size: 4em;
+	    font-weight: 700;
+	    text-align: center;
+	    letter-spacing: 2px;
+	    width: 100vh;
+	    left: 50%;
+	    top: 50%;
+	    transform: translate(-50%, -50%);
+	}
+
+	#text-wrapper {
+		display: block;
+	    position: absolute;
+	    left: 50%;
+	    top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 100;
+	}
+
+	#hero-text span{
+		color: rgba(255, 187, 41, 1);
+	}
+
+	#blinky {
+	    border-right: .05em solid;
+	    animation: caret 1s steps(1) infinite;
+	}
+
+	@keyframes caret {
+	    50% {
+	        border-color: transparent;
+	    }
+	}
+
 	@media screen and (max-width: 63.9375em) {
 		.hero{
 			height: 50vh;
+		}
+
+		#hero-text {
+			font-size: 1.5em;
 		}
 	}
 

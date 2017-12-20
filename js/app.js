@@ -79,6 +79,12 @@
     $('.content').filter(':not(.'+tag+')').parent().delay(500).fadeOut();
     $('.content').filter('.'+tag).parent().delay(1000).fadeTo('fast',1);
 
+    var goTo = $(this).children().first().attr("href");
+
+    setTimeout(function(){
+      window.location = goTo;
+    },1000);
+
     $('.filter > a').css('color', 'black');
     $('.filter > .'+tag).css('color', 'rgba(255, 187, 41, 1)');
   });

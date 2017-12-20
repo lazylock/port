@@ -1,0 +1,515 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fre",
+				"free_block"
+			],
+			[
+				"free",
+				"free_block"
+			],
+			[
+				"ne",
+				"next_ptr"
+			],
+			[
+				"coal",
+				"coalesce"
+			],
+			[
+				"old",
+				"old_header"
+			],
+			[
+				"pre",
+				"prev_ptr"
+			],
+			[
+				"size",
+				"size_t"
+			],
+			[
+				"segment",
+				"segment_size"
+			],
+			[
+				"us",
+				"usable_heap_size"
+			],
+			[
+				"hea",
+				"heap_start"
+			],
+			[
+				"heap",
+				"heap_max"
+			],
+			[
+				"allo",
+				"allocated_size"
+			],
+			[
+				"alloc",
+				"allocated"
+			],
+			[
+				"next",
+				"next_block_size"
+			],
+			[
+				"my",
+				"mymalloc"
+			],
+			[
+				"new",
+				"newsz"
+			],
+			[
+				"alloca",
+				"allocated_size"
+			],
+			[
+				"block",
+				"block_size"
+			],
+			[
+				"ma",
+				"MAX_LINE_LEN"
+			],
+			[
+				"M",
+				"MIN_NLINES"
+			],
+			[
+				"i",
+				"include"
+			],
+			[
+				"line",
+				"line"
+			],
+			[
+				"search",
+				"search_filenames_wildcard"
+			],
+			[
+				"high",
+				"highOrderMask"
+			],
+			[
+				"GET",
+				"getNumSigBytes"
+			],
+			[
+				"con",
+				"continuing_bit2"
+			],
+			[
+				"cont",
+				"continuing_bit1"
+			],
+			[
+				"signed",
+				"signed_max"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"mediu",
+				"medium-4 \tFoundation 3 Class"
+			],
+			[
+				"borderradis",
+				"border-radius"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 588.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Build: Cancel"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 600.0
+	},
+	"console":
+	{
+		"height": 180.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Z/cs107/assign7/implicit.c",
+		"/Z/cs107/assign7/explicit.c",
+		"/C/Users/Winston/Documents/Classes/Current/ME203/Description.txt",
+		"/C/Users/Winston/Downloads/Description (1)",
+		"/C/Users/Winston/Documents/Classes/Current/ME203/Description",
+		"/Z/cs107/assign7/test_harness.c",
+		"/Z/cs107/assign7/segment.c",
+		"/Z/cs107/assign7/samples/example-robust.script",
+		"/Z/cs107/assign7/custom_tests",
+		"/Z/cs107/assign7/bump.c",
+		"/Z/cs107/assign7/readme.txt",
+		"/Z/cs107/assign7/samples/example3-inplace.script",
+		"/Z/cs107/assign7/segment.h",
+		"/Z/cs107/assign7/.gitignore",
+		"/Z/cs107/assign7/samples/pattern-recycle.script",
+		"/Z/cs107/assign7/samples/pattern-updown.script",
+		"/Z/cs107/assign7/samples/example4-coalesce.script",
+		"/Z/cs107/assign7/samples/pattern-realloc.script",
+		"/Z/cs107/assign7/samples/tiny.script",
+		"/Z/cs107/assign7/samples/example1-nofree.script",
+		"/Z/cs107/assign7/samples/example2-recycle.script",
+		"/Z/cs107/assign7/samples/pattern-mixed.script",
+		"/Z/cs107/assign7/samples/pattern-coalesce.script",
+		"/Z/cs107/assign7/samples/pattern-allocfree.script",
+		"/Z/cs107/assign7/test_bump",
+		"/Z/cs107/assign6/string list",
+		"/Z/cs107/assign6/atm.c",
+		"/Z/cs107/assign6/input.txt",
+		"/Z/cs107/assign6/.gdbinit",
+		"/Z/cs107/assign6/notes",
+		"/Z/cs107/assign6/assembly code",
+		"/Z/cs107/assign6/global stuff",
+		"/Z/cs107/assign6/readme.txt",
+		"/Z/cs107/assign6/samples/wordlist",
+		"/Z/cs107/assign6/create_password.c",
+		"/Z/cs107/assign6/password.txt",
+		"/Z/cs107/lab7/buggy.c",
+		"/Z/cs107/lab7/Makefile",
+		"/Z/cs107/lab7/fact.c",
+		"/Z/cs107/assign5/timer.s",
+		"/Z/cs107/assign5/loops.c",
+		"/Z/cs107/assign5/readme.txt",
+		"/Z/cs107/assign5/codetimer.c",
+		"/Z/cs107/assign5/division.c",
+		"/Z/cs107/lab6/asm.s",
+		"/Z/cs107/assign2/mywhich.c",
+		"/Z/cs107/assign2/scan_token.c",
+		"/Z/cs107/assign2/readme.txt",
+		"/Z/cs107/assign2/tokenize.c",
+		"/Z/cs107/assign3/read_line.c",
+		"/Z/cs107/assign3/myuniq.c",
+		"/Z/cs107/assign3/mytail.c",
+		"/Z/cs107/assign4/mysort.c",
+		"/Z/cs107/assign4/binsert.c",
+		"/Z/cs107/assign4/myls.c",
+		"/Z/cs107/assign4/comparison.c",
+		"/Z/cs107/assign1/sat.c",
+		"/Z/cs107/assign1/readme.txt",
+		"/Z/cs107/assign4/readme.txt",
+		"/Z/cs107/assign4/test_binsert.c",
+		"/C/Users/Winston/Documents/Krupp/Krupp Internship Questionnaire and Application Materials Web Form 2017-18.html",
+		"/Z/cs107/assign4/custom_tests",
+		"/C/Users/Winston/Documents/mysort.c",
+		"/Z/cs107/assign3/code.c",
+		"/Y/cs107/assign4/comparison.c",
+		"/Y/cs107/assign4/readme.txt",
+		"/Z/cs107/assign4/code.c",
+		"/Z/cs107/assign3/readme.txt",
+		"/Z/cs107/assign3/mycat.c",
+		"/Z/cs107/assign3/.gitignore",
+		"/Z/cs107/lab4/dups.c",
+		"/Z/cs107/assign3/num.txt",
+		"/Z/cs107/lab3/mywc.c",
+		"/Z/cs107/assign2/code.c",
+		"/Z/cs107/lab2/myprintenv.c",
+		"/Z/cs107/lab2/buggy.c",
+		"/Z/cs107/assign2/custom_tests",
+		"/Z/cs107/assign2/samples/prototypes.h",
+		"/Z/cs107/assign1/automata.c",
+		"/Z/cs107/assign1/utf8.c",
+		"/C/Users/Winston/Documents/Programming/hosts.txt",
+		"/Z/cs107/assign1/code.c",
+		"/C/Users/Winston/Documents/Classes/Archive/CS106B/Assignment 3/src/Recursion.cpp",
+		"/C/Users/Winston/Documents/Classes/Archive/CS106B/Assignment 7/src/Trailblazer.cpp",
+		"/C/Users/Winston/Documents/Projects/Portfolio V2/index.html",
+		"/C/Users/Winston/Documents/Projects/Portfolio V2/contact.html",
+		"/C/Users/Winston/Documents/Projects/Portfolio V2/css/app.css",
+		"/C/Users/Winston/Documents/Projects/Portfolio V2/resume.html",
+		"/C/Users/Winston/Documents/Projects/Portfolio V2/about.html",
+		"/C/Users/Winston/Documents/Projects/Portfolio/index.html",
+		"/C/Users/Winston/Documents/Projects/Portfolio/js/app.js",
+		"/C/Users/Winston/Documents/Projects/Portfolio/css/foundation.css",
+		"/C/Users/Winston/Documents/Projects/Portfolio/css/app.css",
+		"/C/Users/Winston/Downloads/html5up-massively/index.html",
+		"/C/Users/Winston/Downloads/html5up-massively/assets/js/main.js",
+		"/C/Users/Winston/Downloads/html5up-massively/assets/css/main.css",
+		"/C/Users/Winston/AppData/Local/Temp/Temp1_topbar-mega-menu-dropdown.zip/topbar-mega-menu-dropdown/topbar-mega-menu-dropdown.html",
+		"/C/Users/Winston/AppData/Local/Temp/Temp1_topbar-mega-menu-dropdown.zip/topbar-mega-menu-dropdown/topbar-mega-menu-dropdown.scss",
+		"/C/Users/Winston/Documents/Projects/Portfolio/js/vendor/foundation.js",
+		"/C/Users/Winston/Documents/Projects/Portfolio/js/vendor/foundation.min.js",
+		"/C/Users/Winston/Documents/Foundation 6/index.html",
+		"/C/Users/Winston/Downloads/foundation-6.3.1-complete/css/app.css",
+		"/C/Users/Winston/Downloads/foundation-6.3.1-complete/index.html",
+		"/C/Users/Winston/Downloads/foundation-6.3.1-complete/css/app.scss",
+		"/C/Users/Winston/Downloads/cloud-to-butt-master/cloud-to-butt-master/Source/content_script.js",
+		"/C/Users/Winston/Downloads/NOOBS_v2_4_0/INSTRUCTIONS-README.txt",
+		"/C/Users/Winston/Documents/trlblzr3.txt",
+		"/C/Users/Winston/Documents/Trailblazer.cpp",
+		"/C/Users/Winston/AppData/Local/Temp/Temp1_Code19.zip/Binary Search Trees II/src/BinarySearchTrees.cpp",
+		"/C/Users/Winston/AppData/Local/Temp/Temp1_Code18.zip/Binary Search Trees/src/BinarySearchTrees.cpp",
+		"/C/Users/Winston/AppData/Local/Temp/Temp1_Code16.zip/Linked Lists/src/LinkedLists.cpp",
+		"/C/Users/Winston/AppData/Local/Temp/Temp1_Code15.zip/OurStack/src/OurStack.cpp",
+		"/C/Users/Winston/Documents/Projects/Viteamin/teammaker.js",
+		"/C/Users/Winston/Documents/Projects/Viteamin/test.html",
+		"/C/Users/Winston/Downloads/index_data.txt",
+		"/C/Users/Winston/AppData/Local/Temp/Temp1_Code15.zip/OurStack/src/OurStack.h",
+		"/C/Users/Winston/Desktop/Portfolio/index.html",
+		"/C/Users/Winston/Desktop/Portfolio/assets/sass/main.scss",
+		"/C/Users/Winston/Desktop/Portfolio/assets/sass/layout/_main.scss",
+		"/C/Users/Winston/Desktop/Portfolio/assets/sass/layout/_header.scss",
+		"/C/Users/Winston/Desktop/Portfolio/assets/sass/layout/_wrapper.scss",
+		"/C/Users/Winston/Desktop/Portfolio/assets/sass/layout/_footer.scss",
+		"/C/Users/Winston/Desktop/Portfolio/assets/sass/base/_page.scss",
+		"/C/Users/Winston/Documents/Classes/Current/CS106B/Assignment 0/hashval.txt",
+		"/C/Users/Winston/Documents/Classes/Current/CS106B/Assignment 1/res/Preamble-Constitution.txt",
+		"/C/Users/Winston/Documents/Classes/Current/CS106B/Assignment 1/res/JFK-Berlin.txt",
+		"/C/Users/Winston/Documents/Classes/Current/CS106B/Assignment 3/src/RecursionVersionWin.txt",
+		"/C/Users/Winston/Documents/Krupp Internship Questionnaire and Application Materials Web Form 2016-17.html"
+	],
+	"find":
+	{
+		"height": 48.0
+	},
+	"find_in_files":
+	{
+		"height": 156.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"heap_segment_size",
+			"nofree",
+			"\t\n",
+			" 180",
+			" 130",
+			"130",
+			" 128",
+			" 129",
+			"next_block_size",
+			" 78\n",
+			" 78",
+			" 78 ",
+			" 78",
+			"(struct header*)",
+			"57 ",
+			"57",
+			"192",
+			">=",
+			" (",
+			";\n",
+			"3",
+			"heap_segment_start",
+			"validate_heap",
+			"find2",
+			"find1",
+			"30ush",
+			"read_array",
+			"Level_4",
+			"//&",
+			"get_input_line",
+			"level_4",
+			"level_3",
+			"skip_lines",
+			"read",
+			"binky",
+			"402fbd",
+			"level_3",
+			"level_2",
+			"main",
+			"402c20",
+			"get_input_line",
+			"get_inp",
+			"get_inpu",
+			"get_input",
+			"level_1",
+			"level_q",
+			"level)1",
+			"level 1",
+			"main",
+			"send_noti",
+			"finish_bomb",
+			"send_noti",
+			"explode",
+			"402208",
+			"main",
+			"40131a",
+			"202c30",
+			"main",
+			"0",
+			"new_line",
+			"))",
+			"**)",
+			" *)",
+			"else",
+			"assert",
+			");\n",
+			"\";\n",
+			"}",
+			";\n",
+			"numbits"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 48.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "portfolio.sublime-project",
+	"replace":
+	{
+		"height": 90.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 314.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

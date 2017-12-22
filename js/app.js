@@ -30,6 +30,18 @@
 
   });
 
+  $(window).resize(function() {
+
+    setTimeout(function() {
+        if ($('header').css('z-index') == '-2' || $('header').css('z-index') == '-3') {
+            toggleScrolled(4);
+        } else {
+            toggleScrolled(6);
+        }
+    }, 250);
+
+  });
+
   function toggleScrolled(input){
 
     hero = $('.hero').height();

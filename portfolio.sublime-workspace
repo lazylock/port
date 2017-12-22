@@ -164,82 +164,10 @@
 	"buffers":
 	[
 		{
-			"file": "css/app.css",
+			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 13938,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 6210,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "about.html",
-			"settings":
-			{
-				"buffer_size": 4644,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "apparel.html",
-			"settings":
-			{
-				"buffer_size": 5528,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "berlin.html",
-			"settings":
-			{
-				"buffer_size": 8995,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "contact.html",
-			"settings":
-			{
-				"buffer_size": 4084,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "greidient.html",
-			"settings":
-			{
-				"buffer_size": 5864,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "keyp.html",
-			"settings":
-			{
-				"buffer_size": 5172,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "logos.html",
-			"settings":
-			{
-				"buffer_size": 5725,
+				"buffer_size": 3208,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -250,6 +178,14 @@
 			{
 				"buffer_size": 5396,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "about.html",
+			"settings":
+			{
+				"buffer_size": 4644,
 				"line_ending": "Windows"
 			}
 		}
@@ -312,15 +248,15 @@
 	"file_history":
 	[
 		"/C/Users/Winston/Documents/Projects/Portfolio V2/about.html",
-		"/C/Users/Winston/Documents/Projects/Portfolio V2/index.html",
-		"/C/Users/Winston/Documents/Projects/Portfolio V2/css/app.css",
+		"/C/Users/Winston/Documents/Projects/Portfolio V2/resume.html",
+		"/C/Users/Winston/Documents/Projects/Portfolio V2/logos.html",
+		"/C/Users/Winston/Documents/Projects/Portfolio V2/keyp.html",
+		"/C/Users/Winston/Documents/Projects/Portfolio V2/greidient.html",
 		"/C/Users/Winston/Documents/Projects/Portfolio V2/contact.html",
 		"/C/Users/Winston/Documents/Projects/Portfolio V2/berlin.html",
 		"/C/Users/Winston/Documents/Projects/Portfolio V2/apparel.html",
-		"/C/Users/Winston/Documents/Projects/Portfolio V2/resume.html",
-		"/C/Users/Winston/Documents/Projects/Portfolio V2/logos.html",
-		"/C/Users/Winston/Documents/Projects/Portfolio V2/greidient.html",
-		"/C/Users/Winston/Documents/Projects/Portfolio V2/keyp.html",
+		"/C/Users/Winston/Documents/Projects/Portfolio V2/index.html",
+		"/C/Users/Winston/Documents/Projects/Portfolio V2/css/app.css",
 		"/C/Users/Winston/Documents/Projects/Portfolio V2/js/app.js",
 		"/C/Users/Winston/Documents/Projects/Portfolio V2/js/vendor/what-input.js",
 		"/C/Users/Winston/Downloads/masonry-demo/masonry-demo/index.html",
@@ -549,66 +485,67 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "css/app.css",
+					"file": "js/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13938,
+						"buffer_size": 3208,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								179,
-								179
+								819,
+								819
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 630.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "index.html",
+					"file": "resume.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6210,
+						"buffer_size": 5396,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								361,
-								361
+								584,
+								584
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -624,8 +561,8 @@
 						"selection":
 						[
 							[
-								369,
-								369
+								4601,
+								4516
 							]
 						],
 						"settings":
@@ -635,220 +572,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "apparel.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5528,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								371,
-								371
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 80.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "berlin.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8995,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								370,
-								370
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "contact.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4084,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								371,
-								371
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "greidient.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5864,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								381,
-								381
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "keyp.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5172,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								368,
-								368
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3150.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "logos.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5725,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								369,
-								369
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "resume.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5396,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								265,
-								265
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 58.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]

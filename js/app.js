@@ -38,7 +38,7 @@
         } else {
             toggleScrolled(6);
         }
-    }, 250);
+    }, 500);
 
   });
 

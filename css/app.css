@@ -201,6 +201,16 @@
 		}
 	}
 
+	@media screen and (max-width: 39.9375em) {
+		.hero{
+			height: 50vh;
+		}
+
+		#hero-index #hero-text {
+			font-size: 1em;
+		}
+	}
+
 /*MENU BAR*/
 
 	.menu a,

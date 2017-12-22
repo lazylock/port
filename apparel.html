@@ -138,24 +138,24 @@
     <script>
         var rellax = new Rellax('.rellax');
 
-        var $grid = $('.grid').masonry({
-            itemSelector: '.grid-item',
-            columnWidth: '.grid-sizer',
-            gutter: '.gutter-sizer',
-            percentPosition: true
-        });
-
-        $grid.imagesLoaded( function() {
-            $grid.masonry('layout');
-        });
-
-        $(".hero").ready(function () {
-            $grid.masonry('layout');
+        $('.grid').imagesLoaded().progress( function() {
+            $('.grid').masonry({
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-sizer',
+                gutter: '.gutter-sizer',
+                percentPosition: true
+            });
         });
 
         $(window).resize(function () {
-            $grid.masonry('layout');
+            $('.grid').masonry({
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-sizer',
+                gutter: '.gutter-sizer',
+                percentPosition: true
+            });
         });
+        
     </script>
 </body>
 

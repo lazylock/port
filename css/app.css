@@ -497,41 +497,6 @@
 
 /*PROJECT*/
 
-	.post {
-		margin: 0;
-	    margin-top: 100vh;
-	    position: relative;
-
-		display: block;
-		width: 100%;
-		height: auto;
-		padding: 20em;
-		padding-bottom: 10em;
-		background-color: white;
-		color: black;
-	}
-
-	.date{
-		text-align: center;
-		color: grey;
-		margin-bottom: 2em;
-	}
-
-	.title{
-		text-align: center;
-		font-size: 3em;
-	}
-
-	article .image {
-		margin-top: 4em;
-		margin-bottom: 4em;
-	}
-
-	article .caption{
-		margin-top: 0.75em;
-		color: grey;
-	}
-
 	.entry:hover {
 		-webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
 	    -moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
@@ -588,25 +553,10 @@
 		font-weight: bold;
 	}
 
-	@media screen and (max-width: 39.9375em) {
-		.post {
-			z-index: -3;
-			font-size: 1em;
-			padding: 8em 2em 8em 2em;
-			margin-top: 50vh;
-		}
-
+	@media screen and (max-width: 63.9375em) {
 		.grid-sizer, .grid-item {
 			width: 100%;
 		}	
-	}
-
-	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-		.post {
-			font-size: 1.25em;
-			padding: 12em 4em 12em 4em;
-			margin-top: 50vh;
-		}
 	}
 
 /*CONTACT*/
@@ -737,10 +687,16 @@
 		margin-top: 3em;
 	}
 
-	@media screen and (max-width: 63.9375em) {
+	@media screen and (max-width: 39.9375em) {
 		.three .grid-sizer, .three .grid-item {
 			width: 100%;
 		}	
+	}
+
+	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+		.three .grid-sizer, .three .grid-item {
+			width: calc(50% - 1.5em);
+		}		
 	}
 
 /*FOOTER*/

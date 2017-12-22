@@ -6,9 +6,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winston Liao</title>
-    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     
     <link rel="shortcut icon" href="/favicon.ico">
@@ -176,7 +175,9 @@
         });
 
         $(window).resize(function () {
-            $grid.masonry('layout');
+            setTimeout(function() {
+                $grid.masonry('layout');
+            }, 250);
         });
     </script>
 </body>

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
@@ -23,7 +23,7 @@
 <!--HERO-->
     <header>
         <div class="hero rellax" id="hero-index" data-rellax-speed="4">
-        	<div id="text-wrapper" class="rellax" data-rellax-speed="2"><p id="hero-text">Welcome to my<br><span></span><br>portfolio</p></div>
+        	<div id="text-wrapper" class="rellax" data-rellax-speed="2"><p id="hero-text"><strong>Welcome to my<br><span></span><br>portfolio</strong></p></div>
         </div>
     </header>
 
@@ -40,17 +40,17 @@
                 </li>
                 <li class="scrolled show cats" >
                     <a href="#top">Categories</a>
-                    <div class="tags grid-x grid-margin-x small-up-1 medium-up-2 large-up-3" id="cats">
-                        <div class="cell filter">
+                    <div class="tags" id="cats">
+                        <div class="filter">
                             <a class="design" href="#top">Graphic Design</a>
                         </div>
-                        <div class="cell filter">
+                        <div class="filter">
                             <a class="fashion" href="#top">Fashion</a>
                         </div>
-                        <div class="cell filter">
+                        <div class="filter">
                             <a class="travel" href="#top">Travel</a>
                         </div>
-                        <div class="cell filter">
+                        <div class="filter">
                             <a class="engineering" href="#top">Engineering</a>
                         </div>
                     </div>
@@ -99,77 +99,85 @@
     </nav>
 
 <!--CONTENT-->
-        <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3 main" id="top" data-magellan-target="top">
 
-            <div class="cell">
-                <div class="content design">
-                    <a href="greidient.html">
-                        <img src="assets/cells/greidient.jpg">
-                        <p>GREIDIENT STUDIOS</p>
-                    </a>
-                </div>
-            </div>
-            <div class="cell">
-                <div class="content fashion design">
-                    <a href="apparel.html">
-                        <img src="assets/cells/apparel.jpg">
-                        <p>APPAREL</p>
-                    </a>
-                </div>
+	<div class="main" id="top">
+	    <div class="grid three">
+
+	        <div class="grid-sizer"></div>
+	        <div class="gutter-sizer"></div>
+
+	        <div class="grid-item entry design">
+                <a href="greidient.html">
+                    <img src="assets/cells/greidient.jpg">
+                    <p>GREIDIENT STUDIOS</p>
+                </a>
             </div>
 
-            <div class="cell">
-                <div class="content design">
-                    <a href="logos.html">
-                        <img src="assets/cells/logos.jpg">
-                        <p>LOGOS</p>
-                    </a>
-                </div>
-            </div>
-  
-
-            <div class="cell">
-                <div class="content travel">
-                    <a href="berlin.html">
-                        <img src="assets/cells/berlin.jpg">
-                        <p>BERLIN</p>
-                    </a>
-                </div>
+            <div class="grid-item entry fashion design">
+                <a href="apparel.html">
+                    <img src="assets/apparel/qb.png">
+                    <p>APPAREL</p>
+                </a>
             </div>
 
-            <div class="cell">
-                <div class="content engineering">
-                    <a href="keyp.html">
-                        <img src="assets/cells/keyp.jpg">
-                        <p>KEYP</p>
-                    </a>
-                </div>
+            <div class="grid-item entry design">
+                <a href="logos.html">
+                    <img src="assets/cells/logos.jpg">
+                    <p>LOGOS</p>
+                </a>
             </div>
 
-    </div>
+            <div class="grid-item entry travel">
+                <a href="berlin.html">
+                    <img src="assets/cells/berlin.jpg">
+                    <p>BERLIN</p>
+                </a>
+            </div>
+
+            <div class="grid-item entry engineering">
+                <a href="keyp.html">
+                    <img src="assets/cells/keyp.jpg">
+                    <p>KEYP</p>
+                </a>
+            </div>
+
+	    </div>
+	</div>
     
 <!--FOOTER-->
-  <footer>
-      <div class="footer magellan-index" data-magellan>
-      <div class="footwrap">
-          <div class="return">
-              <a href="#top">&#710</a>
-          </div>
-          <p>Built with the <a href="http://foundation.zurb.com/" target="_blank">Foundation Framework</a>
-                and a touch of <a href="https://dixonandmoe.com/rellax/" target="_blank">Rellax</a>
-            </p>
-              </div>
-      </div>
-  </footer>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/rellax.min.js"></script>
-    <script src="js/type.js"></script>
-    <script>
-    var rellax = new Rellax('.rellax');
-    </script>
+	<footer>
+	    <div class="footer">
+	        <div class="footwrap">
+	            <div class="return">
+	                <a href="#top">&#710</a>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/rellax.min.js"></script>
+	<script src="js/vendor/masonry.pkgd.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/type.js"></script>
+	<script>
+		var rellax = new Rellax('.rellax');
+
+		var $grid = $('.grid').masonry({
+		   itemSelector: '.three .grid-item',
+		   columnWidth: '.three .grid-sizer',
+		   gutter: '.gutter-sizer',
+		   percentPosition: true
+		});
+
+		$grid.imagesLoaded().progress(function() {
+		   $grid.masonry('layout');
+		});
+
+		$(window).resize(function() {
+		   $grid.masonry('layout');
+		});
+	</script>
 </body>
 
 </html>

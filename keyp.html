@@ -8,8 +8,8 @@
     <title>Winston Liao - Keyp</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
@@ -21,6 +21,11 @@
 <!--HERO-->
     <header>
         <div class="hero rellax" id="hero-keyp" data-rellax-speed="4">
+            <div id="text-wrapper" class="rellax" data-rellax-speed="2">
+                <p id="hero-text">
+                    <strong>Keyp</strong><br>Key Organizer
+                </p>
+            </div>
         </div>
     </header>
 
@@ -65,51 +70,71 @@
     </nav>
 
 <!--CONTENT-->
-  <div class="post" data-magellan-target="top">
-    <article id="top">
-       <p class="title"><strong>Keyp</strong></p>
+ 
+<div class="main" id="top">
+    <div class="grid">
 
-       <p class="date">Autumn 2017</p>
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
 
-       <p>I created this Swiss-style, clip-on key organizer for ME203, my design and manufacturing class. Features include swivel-out access to keys, adjustable height, and a bottle opener. Inspired by an S-carabiner I was using, I set out to create a solution to the loud jangling mess of keys while maintaining easy access. The main challenge was fixturing the small aluminum pieces to the rotary table. I screwed the workpieces to the polycarbonate sheetusing the existing holes in the design. A second issue arose when I attempted to refixture the pieces to the rotary table and discovered how difficult it was to recenter the holes. In order to circumvent this, I completed the entire project in a single shop session by refined the milling processes and stacked both of the workpieces. The product was then finished and then anodized.</p>
+        <div class="grid-item">
+            <p><strong>Spring 2017</strong><br><br>I created this Swiss-style, clip-on key organizer for ME203, my design and manufacturing class. Features include swivel-out access to keys, adjustable height, and a bottle opener. Inspired by an S-carabiner I was using, I set out to create a solution to the loud jangling mess of keys while maintaining easy access. The main challenge was fixturing the small aluminum pieces to the rotary table. I screwed the workpieces to the polycarbonate sheet using the existing holes in the design. A second issue arose when I attempted to refixture the pieces to the rotary table and discovered how difficult it was to recenter the holes. In order to circumvent this, I completed the entire project in a single shop session by refining the milling processes and stacking both of the workpieces. The product was then finished and then anodized.</p>
+        </div>
 
-       <div class="image">
+        <div class="grid-item">
+            <img src="assets/keyp/jeans.jpg">
+        </div>
+
+        <div class="grid-item">
             <img src="assets/keyp/stack.jpg">
-            <p class="caption">Preparing the workpieces for fixturing</p>
+            <p>Preparing workpieces for fixturing</p>
         </div>
 
-        <div class="image">
+        <div class="grid-item">
             <img src="assets/keyp/fixture.jpg">
-            <p class="caption">Fixturing the workpieces onto the rotary table</p>
+            <p>Fixturing workpieces to the rotary table</p>
         </div>
 
-       <div class="image">
+        <div class="grid-item">
             <img src="assets/keyp/mill.jpg">
-            <p class="caption">Milling operations</p>
+            <p>Milling operations</p>
         </div>
-    </article>
-  </div>
-  
-<!--FOOTER-->
-<footer>
-    <div class="footer magellan-project" data-magellan>
-        <div class="footwrap">
-            <div class="return">
-                <a href="#top">&#710</a>
-            </div>
-            <p>Built with the <a href="http://foundation.zurb.com/" target="_blank">Foundation Framework</a>
-                and a touch of <a href="https://dixonandmoe.com/rellax/" target="_blank">Rellax</a>
-            </p>
-        </div>
+
     </div>
-</footer>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
+</div>
+
+<!--FOOTER-->
+    <footer>
+        <div class="footer">
+            <div class="footwrap">
+                <div class="return">
+                    <a href="#top">&#710</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/rellax.min.js"></script>
+    <script src="js/vendor/masonry.pkgd.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/rellax.min.js"></script>
     <script>
-    var rellax = new Rellax('.rellax');
+        var rellax = new Rellax('.rellax');
+
+        var $grid = $('.grid').masonry({
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer',
+            percentPosition: true
+        });
+
+        $grid.imagesLoaded().progress( function() {
+            $grid.masonry('layout');
+        });
+
+        $(window).resize(function () {
+            $grid.masonry('layout');
+        });
     </script>
 </body>
 

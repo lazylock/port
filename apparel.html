@@ -8,8 +8,8 @@
     <title>Winston Liao - Apparel</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
@@ -21,6 +21,11 @@
 <!--HERO-->
     <header>
         <div class="hero rellax" id="hero-apparel" data-rellax-speed="4">
+            <div id="text-wrapper" class="rellax" data-rellax-speed="2">
+                <p id="hero-text">
+                    <strong>Apparel</strong><br>T-Shirt Graphics
+                </p>
+            </div>
         </div>
     </header>
 
@@ -65,72 +70,87 @@
     </nav>
 
 <!--CONTENT-->
-  <div class="post" data-magellan-target="top">
-    <article id="top">
-       <p class="title"><strong>Apparel</strong></p>
+ 
+<div class="main" id="top">
+    <div class="grid">
 
-       <p class="date">Fall 2014 - Spring 2015</p>
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
 
-       <p>Throughout high school I designed t-shirts for campus organizations, and I eventually founded the Digital Art & Design Club to build a community of artists and designers. There was a pressing need for graphic work, and the usual route for clubs was to crowdsource a design, a process that was lengthy and did not guarantee results. We educated students interested in the field through workshops and gave them real projects from other clubs. Beyond this leadership role, I completed the shirts below. All of the art was done in Adobe Illustrator. This was the first time I'd actually see any of my work, not only in physical form, but also being used by others.</p>
-        
-        <div class="image">
-            <img src="assets/apparel/csf.jpg">
+        <div class="grid-item">
+            <p><strong>Autumn 2014 - Spring 2015</strong><br><br>Throughout high school I designed t-shirts for campus organizations, and I eventually founded the Digital Art & Design Club to build a community of artists and designers. There was a pressing need for graphic work, and the usual route for clubs was to crowdsource a design, a process that was lengthy and did not guarantee results. We educated students interested in the field through workshops and gave them real projects from other clubs. Beyond this leadership role, I completed the shirts below. All of the art was done in Adobe Illustrator. This was the first time I'd actually see any of my work, not only in physical form, but also being used by others.</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="assets/apparel/csf.png">
             <p class="caption">California Scholarship Federation</p>
         </div>
 
-        <div class="image">
-            <img src="assets/apparel/qb.jpg">
-            <p class="caption">Quiz Bowl</p>
-        </div>
-
-        <div class="image">
-            <img src="assets/apparel/amon.jpg">
-            <p class="caption">Key Club International</p>
-        </div>
-
-        <div class="image">
-            <img src="assets/apparel/myth.jpg">
-            <p class="caption">Battle of the Classes 2015</p>
-        </div>
-
-        <div class="image">
-            <img src="assets/apparel/up.jpg">
+        <div class="grid-item">
+            <img src="assets/apparel/kyhu.png">
             <p class="caption">Keep Your Head Up</p>
         </div>
 
-        <div class="image">
-            <img src="assets/apparel/skull.jpg">
+        <div class="grid-item">
+            <img src="assets/apparel/skull.png">
             <p class="caption">Donner Party</p>
         </div>
 
-        <div class="image">
-            <img src="assets/apparel/leo.jpg">
+        <div class="grid-item">
+            <img src="assets/apparel/qb.png">
+            <p class="caption">Quiz Bowl</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="assets/apparel/leo.png">
             <p class="caption">LEO Club</p>
         </div>
 
-    </article>
-  </div>
-  
-<!--FOOTER-->
-<footer>
-    <div class="footer magellan-project" data-magellan>
-        <div class="footwrap">
-            <div class="return">
-                <a href="#top">&#710</a>
-            </div>
-            <p>Built with the <a href="http://foundation.zurb.com/" target="_blank">Foundation Framework</a>
-                and a touch of <a href="https://dixonandmoe.com/rellax/" target="_blank">Rellax</a>
-            </p>
+        <div class="grid-item">
+            <img src="assets/apparel/asb.png">
+            <p class="caption">Battle of the Classes 2015</p>
         </div>
+
+        <div class="grid-item">
+            <img src="assets/apparel/key.png">
+            <p class="caption">Key Club</p>
+        </div>
+
     </div>
-</footer>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
+</div>
+
+<!--FOOTER-->
+    <footer>
+        <div class="footer">
+            <div class="footwrap">
+                <div class="return">
+                    <a href="#top">&#710</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/rellax.min.js"></script>
+    <script src="js/vendor/masonry.pkgd.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/rellax.min.js"></script>
     <script>
-    var rellax = new Rellax('.rellax');
+        var rellax = new Rellax('.rellax');
+
+        var $grid = $('.grid').masonry({
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer',
+            percentPosition: true
+        });
+
+        $grid.imagesLoaded().progress( function() {
+            $grid.masonry('layout');
+        });
+
+        $(window).resize(function () {
+            $grid.masonry('layout');
+        });
     </script>
 </body>
 

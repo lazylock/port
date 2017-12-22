@@ -1,24 +1,3 @@
-//MAGELLAN
-
-  var indexOffset = -em(2);
-  var projectOffset = em(16)
-  var halfOffset = -em(2)
-
-  $(document).ready(function() {
-
-    if ($('header').css('z-index') == '-3'){
-        projectOffset = em(6);
-    } else if ($('header').css('z-index') == '-2'){
-        projectOffset = em(12);
-    }
-
-    $('.magellan-index').attr('data-offset', indexOffset);
-    $('.magellan-project').attr('data-offset', projectOffset);
-    $('.magellan-half').attr('data-offset', halfOffset);
-
-    $(document).foundation();
-  });
-
 //BODY FADE
 
   $(function() {
@@ -74,12 +53,20 @@
 //CONTENT
 
   $('.filter').click(function() {
+
     var tag = $(this).children().first().attr('class');
-    $('.content').parent().fadeTo(10,0);
-    $('.content').filter(':not(.'+tag+')').parent().delay(500).fadeOut();
-    $('.content').filter('.'+tag).parent().delay(1000).fadeTo('fast',1);
+    $('.entry').fadeTo(10,0);
+    $('.entry').filter(':not(.'+tag+')').delay(500).fadeOut().hide();
+    $('.entry').filter('.'+tag).delay(1000).fadeTo('fast',1);
 
     var goTo = $(this).children().first().attr("href");
+
+    $('.grid').masonry({
+       itemSelector: '.grid-item',
+       columnWidth: '.grid-sizer',
+       gutter: '.gutter-sizer',
+       percentPosition: true
+    });
 
     setTimeout(function(){
       window.location = goTo;
@@ -90,8 +77,16 @@
   });
 
   $('.all').click(function() {
-    $('.content').parent().fadeTo(100,0);
-    $('.content').parent().delay(1000).fadeTo('fast',1);
+    $('.entry').fadeTo(100,0);
+    $('.entry').delay(1000).show().fadeTo('fast',1);
+
+  $('.grid').masonry({
+       itemSelector: '.grid-item',
+       columnWidth: '.grid-sizer',
+       gutter: '.gutter-sizer',
+       percentPosition: true
+    });
+
     $('.filter > a').css('color', 'black');
   });
 
@@ -125,4 +120,12 @@
 
   $('.mobile-nav .all').click(function(){
     $(".mobile-nav").animate({width:'toggle'},350);
+  });
+
+//SMOOTH SCROLL
+  $('.return a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
   });

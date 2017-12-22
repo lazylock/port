@@ -8,8 +8,8 @@
     <title>Winston Liao - Greidient Studios</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
@@ -21,6 +21,11 @@
 <!--HERO-->
     <header>
         <div class="hero rellax" id="hero-greidient" data-rellax-speed="4">
+            <div id="text-wrapper" class="rellax" data-rellax-speed="2">
+                <p id="hero-text">
+                    <strong>Greidient Studios</strong><br>TV Show Posters
+                </p>
+            </div>
         </div>
     </header>
 
@@ -65,62 +70,82 @@
     </nav>
 
 <!--CONTENT-->
-  <div class="post" data-magellan-target="top">
-    <article id="top">
-       <p class="title"><strong>Greidient Studios</strong></p>
+ 
+<div class="main" id="top">
+    <div class="grid">
 
-       <p class="date">Winter 2016 - Present</p>
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
 
-       <p>I like to say that I was raised by TV, in the most positive senses (if any) of that phrase. As a child, my week would be punctuated by regular premieres of new episodes and classic reruns. Today, in our so-called "golden age" of television, my appreciation for the medium has only increased. These stories and chracters mean a lot to me, and this is how I translate that love through my work. These are a series of posters from some of my favorite shows. The designs revolve around core symbols and scenes, and I then flesh out the rest of the shows' moods as represented by this imagery. The art begins as pencil sketches on paper. That gets scanned in and traced out into Adobe Illustrator. The rest of the inking and coloring is done there. I finally apply gradients, textures, borders, and text in Photoshop. I now sell prints in my Etsy shop linked above. The focus of this project has shifted from solely design and illustration to business, customer service, and accounting.</p>
-        
-        <div class="image">
-            <img src="assets/greidient/gravity.jpg">
+        <div class="grid-item">
+            <p><strong>Winter 2016 - Present</strong><br><br>I like to say that I was raised by TV, in the most positive senses (if any) of that phrase. As a child, my week would be punctuated by regular premieres of new episodes and classic reruns. Today, in our so-called "golden age" of television, my appreciation for the medium has only increased. These stories and chracters mean a lot to me, and this is how I translate that love through my work. These are a series of posters from some of my favorite shows. The designs revolve around core symbols and scenes, and I then flesh out the rest of the shows' moods as represented by this imagery. The art begins as pencil sketches on paper. That gets scanned in and traced out into Adobe Illustrator. The rest of the inking and coloring is done there. I finally apply gradients, textures, borders, and text in Photoshop. I now sell prints in my Etsy shop linked above. The focus of this project has shifted from solely design and illustration to business, customer service, and accounting.</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="assets/greidient/gravityfalls.jpg">
             <p class="caption">Disney's <i>Gravity Falls</i></p>
         </div>
 
-        <div class="image">
+        <div class="grid-item">
             <img src="assets/greidient/otgw.jpg">
             <p class="caption">Cartoon Network's <i>Over the Garden Wall</i></p>
         </div>
 
-        <div class="image">
+        <div class="grid-item">
             <img src="assets/greidient/leftovers.jpg">
             <p class="caption">HBO's <i>The Leftovers</i> </p>
         </div>
 
-        <div class="image">
-            <img src="assets/greidient/fargoMeat.jpg">
+        <div class="grid-item">
+            <img src="assets/greidient/fargomeat.jpg">
             <p class="caption">Coen Brothers' original movie & FX's <i>Fargo</i></p>
         </div>
 
-        <div class="image">
-            <img src="assets/greidient/fargoAnimal.jpg">
+        <div class="grid-item">
+            <img src="assets/greidient/fargotrio.jpg">
             <p class="caption">FX's <i>Fargo</i></p>
         </div>
 
-    </article>
-  </div>
-  
-<!--FOOTER-->
-<footer>
-    <div class="footer magellan-project" data-magellan>
-        <div class="footwrap">
-            <div class="return">
-                <a href="#top">&#710</a>
-            </div>
-            <p>Built with the <a href="http://foundation.zurb.com/" target="_blank">Foundation Framework</a>
-                and a touch of <a href="https://dixonandmoe.com/rellax/" target="_blank">Rellax</a>
-            </p>
+        <div class="grid-item">
+            <img src="assets/greidient/citadel.jpg">
+            <p class="caption">Adultswim's <i>Rick and Morty</i></p>
         </div>
+
     </div>
-</footer>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
+</div>
+
+<!--FOOTER-->
+    <footer>
+        <div class="footer">
+            <div class="footwrap">
+                <div class="return">
+                    <a href="#top">&#710</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/rellax.min.js"></script>
+    <script src="js/vendor/masonry.pkgd.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/rellax.min.js"></script>
     <script>
-    var rellax = new Rellax('.rellax');
+        var rellax = new Rellax('.rellax');
+
+        var $grid = $('.grid').masonry({
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer',
+            percentPosition: true
+        });
+
+        $grid.imagesLoaded().progress( function() {
+            $grid.masonry('layout');
+        });
+
+        $(window).resize(function () {
+            $grid.masonry('layout');
+        });
     </script>
 </body>
 

@@ -581,7 +581,7 @@
 	}
 
 	.grid-item img {
-	    max-width: 100%;
+	    width: 100%;
 	}
 
 	.grid-item:hover a {

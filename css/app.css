@@ -129,6 +129,10 @@
 		background: url('../assets/keyp/hero.jpg') center center;
 	}
 
+	#hero-photos {
+		background: url('../assets/photos/amphi.jpg') center center;
+	}
+
 	#hero-contact:before, #hero-about:before, #hero-resume:before {
 		content: '';
 		position: absolute;

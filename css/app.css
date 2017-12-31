@@ -1,7 +1,7 @@
 /*GENERAL*/
 	body {
 	    background-color: black;
-	    font-family: 'Inconsolata', monospace;
+	    font-family: 'Roboto Mono', monospace;
     	opacity: 1;
     	transition: 2s opacity;
 

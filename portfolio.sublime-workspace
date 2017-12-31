@@ -167,16 +167,19 @@
 			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 3208,
+				"buffer_size": 3215,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "resume.html",
+			"contents": "<!doctype html>\n<html class=\"no-js\" lang=\"en\" dir=\"ltr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Winston Liao</title>\n    <link rel=\"stylesheet\" href=\"css/foundation.min.css\">\n    <link rel=\"stylesheet\" href=\"css/app.css\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto+Mono\" rel=\"stylesheet\">\n    \n    <link rel=\"shortcut icon\" href=\"/favicon.ico\">\n    <link rel=\"icon\" sizes=\"16x16 32x32 64x64\" href=\"favicon.ico\">\n\n</head>\n\n<body>\n\n<script>document.body.className += ' fade-out';</script>\n\n<!--HERO-->\n    <header>\n        <div class=\"hero rellax\" id=\"hero-index\" data-rellax-speed=\"4\">\n        \t<div id=\"text-wrapper\" class=\"rellax\" data-rellax-speed=\"2\"><p id=\"hero-text\"><strong>Welcome to my<br><span></span><br>portfolio</strong></p></div>\n        </div>\n    </header>\n\n<!--NAVBAR-->\n    <nav class=\"top-bar main-nav\" id=\"responsive-menu\">\n        <div class=\"top-bar-left\">\n            <ul class=\"menu\">\n                <li class=\"magellan-index keep\" data-magellan>\n                    <a href=\"#top\" id=\"logo\">\n                        <img id=\"white-logo\" src=\"assets/wwhite.png\">\n                        <img id=\"black-logo\" src=\"assets/wblack.png\">\n                        <img id=\"yellow-logo\" src=\"assets/wyellow.png\">\n                    </a>\n                </li>\n                <li class=\"scrolled show cats\" >\n                    <a href=\"#top\">Categories</a>\n                    <div class=\"tags\" id=\"cats\">\n                        <div class=\"filter\">\n                            <a class=\"design\" href=\"#top\">Graphic Design</a>\n                        </div>\n                        <div class=\"filter\">\n                            <a class=\"fashion\" href=\"#top\">Fashion</a>\n                        </div>\n                        <div class=\"filter\">\n                            <a class=\"travel\" href=\"#top\">Travel</a>\n                        </div>\n                        <div class=\"filter\">\n                            <a class=\"engineering\" href=\"#top\">Engineering</a>\n                        </div>\n                    </div>\n                </li>\n                <li class=\"scrolled show all\">\n                    <a href=\"#top\">All</a>\n                </li>\n            </ul>\n        </div>\n        <div class=\"top-bar-right\">\n            <ul class=\"menu\">\n                <li><a href=\"https://www.etsy.com/shop/greidientstudios\" target=\"_blank\">Store</a></li>\n                <li><a href=\"resume.html\">Resume</a></li>\n                <li><a href=\"about.html\">About</a></li>\n                <li><a href=\"contact.html\">Contact</a></li>\n            </ul>\n            <div class=\"hamburger\">\n                <div>&#9776</div>\n            </div>\n            <div>\n        </div>\n    </nav>\n\n    <!-- MOBILE_NAV -->\n\n    <nav class=\"mobile-menu mobile-nav\">\n        <div class=\"x\">&#10006</div>\n        <ul>\n            <li class=\"all\"><a href=\"#top\">All</a></li>\n            <li class=\"categories\"><a href=\"#top\">Categories</a></li>\n            <li><a href=\"https://www.etsy.com/shop/greidientstudios\" target=\"_blank\">Store</a></li>\n            <li><a href=\"resume.html\">Resume</a></li>\n            <li><a href=\"about.html\">About</a></li>\n            <li><a href=\"contact.html\">Contact</a></li>\n        </ul>\n    </nav>\n\n    <nav class=\"mobile-menu mobile-tags\">\n        <div class=\"x\">&#10006</div>\n        <ul>\n            <li class=\"filter\"><a class=\"design\" href=\"#top\">Graphic Design</a></li>\n            <li class=\"filter\"><a class=\"art\" href=\"#top\">Fashion</a></li>\n            <li class=\"filter\"><a class=\"engineering\" href=\"#top\">Engineering</a></li>\n            <li class=\"filter\"><a class=\"travel\" href=\"#top\">Travel</a></li>\n        </ul>\n    </nav>\n\n<!--CONTENT-->\n\n\t<div class=\"main\" id=\"top\">\n\t    <div class=\"grid three\">\n\n\t        <div class=\"grid-sizer\"></div>\n\t        <div class=\"gutter-sizer\"></div>\n\n\t        <div class=\"grid-item entry design\">\n                <a href=\"greidient.html\">\n                    <img src=\"assets/cells/greidient.jpg\">\n                    <p>GREIDIENT STUDIOS</p>\n                </a>\n            </div>\n\n            <div class=\"grid-item entry fashion design\">\n                <a href=\"apparel.html\">\n                    <img src=\"assets/apparel/qb.jpg\">\n                    <p>APPAREL</p>\n                </a>\n            </div>\n\n            <div class=\"grid-item entry design\">\n                <a href=\"logos.html\">\n                    <img src=\"assets/cells/logos.jpg\">\n                    <p>LOGOS</p>\n                </a>\n            </div>\n\n            <div class=\"grid-item entry travel\">\n                <a href=\"berlin.html\">\n                    <img src=\"assets/cells/berlin.jpg\">\n                    <p>BERLIN</p>\n                </a>\n            </div>\n\n            <div class=\"grid-item entry engineering\">\n                <a href=\"keyp.html\">\n                    <img src=\"assets/cells/keyp.jpg\">\n                    <p>KEYP</p>\n                </a>\n            </div>\n\n\t    </div>\n\t</div>\n    \n<!--FOOTER-->\n\t<footer>\n\t    <div class=\"footer\">\n\t        <div class=\"footwrap\">\n\t            <div class=\"return\">\n\t                <a href=\"#top\">&#710</a>\n\t            </div>\n\t        </div>\n\t    </div>\n\t</footer>\n\n    <script src=\"js/vendor/jquery.min.js\"></script>\n    <script src=\"js/vendor/rellax.min.js\"></script>\n    <script src=\"js/vendor/masonry.pkgd.min.js\"></script>\n    <script src=\"js/vendor/imagesloaded.pkgd.min.js\"></script>\n    <script src=\"js/app.js\"></script>\n    <script src=\"js/type.js\"></script>\n    <script>\n        var rellax = new Rellax('.rellax');\n\n        var $grid = $('.grid').masonry({\n            itemSelector: '.three .grid-item',\n            columnWidth: '.three .grid-sizer',\n            gutter: '.gutter-sizer',\n            percentPosition: true\n        });\n\n        $grid.imagesLoaded( function() {\n            $grid.masonry('layout');\n        });\n\n        $(window).resize(function () {\n            setTimeout(function() {\n                $grid.masonry('layout');\n            }, 250);\n        });\n    </script>\n</body>\n\n</html>",
+			"file": "index.html",
+			"file_size": 6405,
+			"file_write_time": 131591729548365182,
 			"settings":
 			{
-				"buffer_size": 5396,
+				"buffer_size": 6210,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -247,8 +250,13 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Winston/Documents/Projects/Portfolio V2/css/app.css",
 		"/C/Users/Winston/Documents/Projects/Portfolio V2/about.html",
 		"/C/Users/Winston/Documents/Projects/Portfolio V2/resume.html",
+		"/C/Users/Winston/Downloads/always-on-top (1)/readme.txt",
+		"/C/Users/Winston/default/profile.xml",
+		"/C/Users/Winston/AppData/Roaming/Spotify/prefs",
+		"/C/Users/Winston/Pictures/Poster-MockUp-PSD-Portret-Landscape/Poster MockUp PSD Portret Landscape/License.txt",
 		"/C/Users/Winston/Documents/Projects/Portfolio V2/logos.html",
 		"/C/Users/Winston/Documents/Projects/Portfolio V2/keyp.html",
 		"/C/Users/Winston/Documents/Projects/Portfolio V2/greidient.html",
@@ -256,7 +264,6 @@
 		"/C/Users/Winston/Documents/Projects/Portfolio V2/berlin.html",
 		"/C/Users/Winston/Documents/Projects/Portfolio V2/apparel.html",
 		"/C/Users/Winston/Documents/Projects/Portfolio V2/index.html",
-		"/C/Users/Winston/Documents/Projects/Portfolio V2/css/app.css",
 		"/C/Users/Winston/Documents/Projects/Portfolio V2/js/app.js",
 		"/C/Users/Winston/Documents/Projects/Portfolio V2/js/vendor/what-input.js",
 		"/C/Users/Winston/Downloads/masonry-demo/masonry-demo/index.html",
@@ -370,21 +377,19 @@
 		"/C/Users/Winston/Documents/Trailblazer.cpp",
 		"/C/Users/Winston/AppData/Local/Temp/Temp1_Code19.zip/Binary Search Trees II/src/BinarySearchTrees.cpp",
 		"/C/Users/Winston/AppData/Local/Temp/Temp1_Code18.zip/Binary Search Trees/src/BinarySearchTrees.cpp",
-		"/C/Users/Winston/AppData/Local/Temp/Temp1_Code16.zip/Linked Lists/src/LinkedLists.cpp",
-		"/C/Users/Winston/AppData/Local/Temp/Temp1_Code15.zip/OurStack/src/OurStack.cpp",
-		"/C/Users/Winston/Documents/Projects/Viteamin/teammaker.js",
-		"/C/Users/Winston/Documents/Projects/Viteamin/test.html",
-		"/C/Users/Winston/Downloads/index_data.txt"
+		"/C/Users/Winston/AppData/Local/Temp/Temp1_Code16.zip/Linked Lists/src/LinkedLists.cpp"
 	],
 	"find":
 	{
-		"height": 42.0
+		"height": 61.0
 	},
 	"find_in_files":
 	{
 		"height": 156.0,
 		"where_history":
 		[
+			"*.html,<open-folders>",
+			"*.html"
 		]
 	},
 	"find_state":
@@ -392,6 +397,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Inconsolata",
 			"png",
 			"image",
 			"content",
@@ -475,6 +481,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Roboto+Mono"
 		],
 		"reverse": false,
 		"show_context": false,
@@ -494,15 +501,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3208,
+						"buffer_size": 3215,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								819,
-								819
+								3070,
+								3070
 							]
 						],
 						"settings":
@@ -512,7 +519,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 630.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -520,25 +527,25 @@
 				},
 				{
 					"buffer": 1,
-					"file": "resume.html",
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5396,
+						"buffer_size": 6210,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								584,
-								584
+								589,
+								589
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -561,8 +568,8 @@
 						"selection":
 						[
 							[
-								4601,
-								4516
+								0,
+								0
 							]
 						],
 						"settings":
@@ -572,7 +579,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3150.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,

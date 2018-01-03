@@ -90,8 +90,8 @@
 /*HERO*/
 
 	#hero-index, #hero-example{
-		background: darkred;
-		background: url('../assets/bg.jpg') center center;
+		background: red;
+		/*background: url('../assets/bg.jpg') center center;*/
 	}
 
 	.hero:before{
@@ -157,7 +157,7 @@
 	    display: block;
 	    position: absolute;
 	    color: white;
-	    font-size: 2em;
+	    font-size: 1.25em;
 	    font-weight: 700;
 	    text-align: center;
 	    letter-spacing: 2px;
@@ -201,7 +201,7 @@
 		}
 
 		#hero-text {
-			font-size: 1.5em;
+			font-size: 1em;
 		}
 	}
 
@@ -211,7 +211,7 @@
 		}
 
 		#hero-index #hero-text {
-			font-size: 1em;
+			font-size: 0.75em;
 		}
 	}
 

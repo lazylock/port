@@ -140,6 +140,10 @@
 		background: url('../assets/dripdrop/dripdrop.jpg') center center;
 	}
 
+	#hero-dining {
+		background: url('../assets/dining/dining.jpg') center center;
+	}
+
 	#hero-contact:before, #hero-about:before, #hero-resume:before {
 		content: '';
 		position: absolute;

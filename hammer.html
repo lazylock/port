@@ -1,0 +1,163 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winston Liao - Hammershot 8</title>
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
+</head>
+
+<body>
+
+<script>document.body.className += ' fade-out';</script>
+<!--HERO-->
+    <header>
+        <div class="hero rellax" id="hero-hammer" data-rellax-speed="4">
+            <div id="text-wrapper" class="rellax" data-rellax-speed="2">
+                <p id="hero-text">
+                    <strong>Hammershot 8</strong><br>Nerf Mod
+                </p>
+            </div>
+        </div>
+    </header>
+
+<!--NAVBAR-->
+    <nav class="top-bar main-nav" id="responsive-menu">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="magellan-index keep" data-magellan> 
+                    <a href="index.html#top" id="logo">
+                        <img id="white-logo" src="assets/wwhite.png">
+                        <img id="black-logo" src="assets/wblack.png">
+                        <img id="yellow-logo" src="assets/wyellow.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><a href="https://www.etsy.com/shop/greidientstudios" target="_blank">Store</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div>&#9776</div>
+            </div>
+            <div>
+        </div>
+    </nav>
+
+    <!-- MOBILE_NAV -->
+
+    <nav class="mobile-menu mobile-nav">
+        <div class="x">&#10006</div>
+        <ul>
+            <li class="all"><a href="index.html#top">Home</a></li>
+            <li><a href="https://www.etsy.com/shop/greidientstudios" target="_blank">Store</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+<!--CONTENT-->
+ 
+<div class="main" id="top">
+    <div class="grid">
+
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+
+        <div class="grid-item">
+            <p><strong>Summer 2017</strong><br><br>The goal for this project was to expand the dart capacity of the Nerf Hammershot and implement interchangeable cylinders for quicker reload time. I started off with 7-dart cylinders but soon increased to 8-darts after seeing similar models popping up in the community. In terms of aesthetics, I aimed to replicate the look of the stock blaster while maintaining detail fidelity in the 3D-printed version. The current set of models allows users to choose between modifying the Hammershot shell to accomodate interchangeable cylinders or simply inserting the new 3D-printed components without altering the blaster. Neodymium magnets in the rotation mechanism and the cylinder ensure a good seal between the blaster body and the dart ports. In order to sell these, I plan on SLA printing the cylinder for copies to be cast in resin.<br></p>
+        </div>
+
+        <div class="grid-item">
+            <img src="assets/hammer/stock.jpg">
+            <p>Stock blaster with 5-dart cylinder</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="assets/hammer/8shotswap.jpg">
+            <p>Modified blaster with 8-dart cylinder</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="assets/hammer/8shot.jpg">
+            <p>Stock 5-dart cylinder vs. 8-dart cylinder</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="assets/hammer/swap.jpg">
+            <p>Interchangeable cylinder with neodymium magnet</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="assets/hammer/internals.jpg">
+            <p>Internals</p>
+        </div>
+
+        <div class="grid-item">
+            <p>All of the parts were modeled in OnShape, a cloud-based CAD platform. I was pleasantly surprised by how capable it was, considering what a behemoth Solidworks is. The interface is clean, and the built-in version control is incredibly useful. Though it lacks some of the more advanced features and in-depth options of Solidworks, I highly recommend OnShape for its simplicity and reliability.</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="assets/hammer/onshape.jpg">
+            <p>CAD Assembly</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="assets/hammer/components.jpg">
+            <p>3D-printed components</p>
+        </div>
+
+    </div>
+</div>
+
+<!--FOOTER-->
+    <footer>
+        <div class="footer">
+            <div class="footwrap">
+                <div class="return">
+                    <a href="#top">&#710</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/rellax.min.js"></script>
+    <script src="js/vendor/masonry.pkgd.min.js"></script>
+    <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+
+        var $grid = $('.grid').masonry({
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer',
+            percentPosition: true
+        });
+
+        $grid.imagesLoaded( function() {
+            $grid.masonry('layout');
+        });
+
+        $(window).resize(function () {
+            setTimeout(function() {
+                $grid.masonry('layout');
+            }, 250);
+        });
+    </script>
+</body>
+
+</html>

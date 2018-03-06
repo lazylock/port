@@ -13,7 +13,7 @@
 
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = [ "design", "engineering", "film", "photography"];
+  var dataText = [ "engineering", "film", "design", "photography"];
   
   // type one text in the typwriter
   // keeps calling itself until the text is finished

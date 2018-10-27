@@ -148,6 +148,14 @@
 		background: url('../assets/dining/dining.jpg') center center;
 	}
 
+	#hero-geo {
+		background: url('../assets/geo/geo.jpg') center center;
+	}
+
+	#hero-date {
+		background: url('../assets/date/date.jpg') center center;
+	}
+
 	#hero-portfolio {
 		background: url('../assets/portfolio/hero.jpg') center center;
 	}

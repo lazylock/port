@@ -160,6 +160,10 @@
 		background: url('../assets/portfolio/hero.jpg') center center;
 	}
 
+	#hero-maze {
+		background: url('../assets/maze/maze.jpg') center center;
+	}
+
 	#hero-contact:before, #hero-about:before, #hero-resume:before {
 		content: '';
 		position: absolute;

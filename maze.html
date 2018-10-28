@@ -1,0 +1,196 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winston Liao - Dungeon</title>
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
+</head>
+
+<body>
+
+    <script>document.body.className += ' fade-out';</script>
+    <!--HERO-->
+    <header>
+        <div class="hero rellax" id="hero-maze" data-rellax-speed="4">
+            <div id="text-wrapper" class="rellax" data-rellax-speed="2">
+                <p id="hero-text">
+                    <strong>Dungeon Maze</strong>
+                    <br>CNC Project
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!--NAVBAR-->
+    <nav class="top-bar main-nav" id="responsive-menu">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="magellan-index keep" data-magellan>
+                    <a href="index.html#top" id="logo">
+                        <img id="white-logo" src="assets/wwhite.png">
+                        <img id="black-logo" src="assets/wblack.png">
+                        <img id="yellow-logo" src="assets/wyellow.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li>
+                    <a href="https://www.etsy.com/shop/greidientstudios" target="_blank">Store</a>
+                </li>
+                <li>
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <div>&#9776</div>
+            </div>
+            <div>
+            </div>
+    </nav>
+
+    <!-- MOBILE_NAV -->
+
+    <nav class="mobile-menu mobile-nav">
+        <div class="x">&#10006</div>
+        <ul>
+            <li class="all">
+                <a href="index.html#top">Home</a>
+            </li>
+            <li>
+                <a href="https://www.etsy.com/shop/greidientstudios" target="_blank">Store</a>
+            </li>
+            <li>
+                <a href="resume.html">Resume</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--CONTENT-->
+
+    <div class="main" id="top">
+        <div class="grid">
+
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer"></div>
+
+            <div class="grid-item">
+                <p>
+                    <strong>Autumn 2018</strong>
+                    <br>
+                    <br> For ME318, the design and CNC machining class at Stanford, we were tasked with creating a maze from
+                    a block of aluminum. In considering maze concepts, I focused on introducing a new mechanic to a puzzle
+                    that would ordinarily only be controlled by 2 axes of rotation and gravity. I felt that adding a degree
+                    of control would make the maze format more dynamic. After considering physics ideas ranging from filling
+                    the maze with water to using magnets, I went with adding another rotational degree of freedom. This supported
+                    the realization of the video game concept in multiple ways. By giving users a physical interface, there
+                    exists more tangible control. Forcing players to flip the maze over replicates the concept of “dungeons”
+                    that are rendered on screen every time the character passes through a door. Pacman was a huge inspiration
+                    for the maze concept. Another aspect that was ultimately cut from the final version was the use of “enemies”
+                    in the form of other balls in the maze that you had to avoid. This was designed to reflect randomly spawning
+                    enemies in dungeons, but it made the already difficult maze very overwhelming.
+                </p>
+            </div>
+
+            <div class="grid-item">
+                <img src="assets/maze/square.jpg">
+            </div>
+
+            <div class="grid-item">
+                <div class="video-responsive">
+                    <iframe class="streamable" src="https://streamable.com/s/7l8px/qfadaq?autoplay=1&muted=1" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p>
+                    Starting from one of the disconnected paths (separate from the section within the same quadrant), you have to make it to
+                    the other one on the bottom side. Each section has two gates, and the key idea is that you have access
+                    to all other gates on the same radii on either side. It takes a minimum of four gates to finish the maze.
+                </p>
+            </div>
+
+            <div class="grid-item">
+                <img src="assets/maze/backs.jpg">
+                <p>
+                    The inclusion of specific hardware increased the complexity of the design immensely but also greatly improved the tactility
+                    of the maze. There are four magnets on the back of each half of the maze so that they “click” in place
+                    after each quarter turn. The steel dowel pin and the nylon bushing ensure smooth rotation.
+                </p>
+            </div>
+
+            <div class="grid-item">
+                <img src="assets/maze/cnc.jpg">
+                <p>Fixtured in the CNC vise</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="assets/maze/machined.jpg">
+                <p>Fresh from the CNC</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="assets/maze/fronts.jpg">
+                <p>Glass bead blasted finish</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer">
+            <div class="footwrap">
+                <div class="return">
+                    <a href="#top">&#710</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/rellax.min.js"></script>
+    <script src="js/vendor/masonry.pkgd.min.js"></script>
+    <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+
+        var $grid = $('.grid').masonry({
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer',
+            percentPosition: true
+        });
+
+        $grid.imagesLoaded(function () {
+            $grid.masonry('layout');
+        });
+
+        $(window).resize(function () {
+            setTimeout(function () {
+                $grid.masonry('layout');
+            }, 250);
+        });
+    </script>
+</body>
+
+</html>

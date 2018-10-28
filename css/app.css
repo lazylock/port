@@ -233,9 +233,6 @@
 	@media screen and (max-width: 63.9375em) {
 		.hero{
 			height: 50vh;
-		}
-
-		#hero-text {
 			font-size: 1em;
 		}
 	}
@@ -243,10 +240,7 @@
 	@media screen and (max-width: 39.9375em) {
 		.hero{
 			height: 50vh;
-		}
-
-		#hero-index #hero-text {
-			font-size: 0.75em;
+			font-size: 0.65em;
 		}
 	}
 

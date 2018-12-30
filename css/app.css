@@ -168,6 +168,10 @@
 		background: url('../assets/semiotic/semiotic.jpg') center center;
 	}
 
+	#hero-hydromag {
+		background: url('../assets/hydromag/hydromag.jpg') center center;
+	}
+
 	#hero-contact:before, #hero-about:before, #hero-resume:before {
 		content: '';
 		position: absolute;

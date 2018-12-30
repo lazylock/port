@@ -1,0 +1,173 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winston Liao - Hydromag</title>
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
+</head>
+
+<body>
+
+    <script>document.body.className += ' fade-out';</script>
+    <!--HERO-->
+    <header>
+        <div class="hero rellax" id="hero-hydromag" data-rellax-speed="4">
+            <div id="text-wrapper" class="rellax" data-rellax-speed="2">
+                <p id="hero-text">
+                    <strong>Hydromag</strong>
+                    <br>CNC Project
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!--NAVBAR-->
+    <nav class="top-bar main-nav" id="responsive-menu">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="magellan-index keep" data-magellan>
+                    <a href="index.html#top" id="logo">
+                        <img id="white-logo" src="assets/wwhite.png">
+                        <img id="black-logo" src="assets/wblack.png">
+                        <img id="yellow-logo" src="assets/wyellow.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li>
+                    <a href="https://www.etsy.com/shop/greidientstudios" target="_blank">Store</a>
+                </li>
+                <li>
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <div>&#9776</div>
+            </div>
+            <div>
+            </div>
+    </nav>
+
+    <!-- MOBILE_NAV -->
+
+    <nav class="mobile-menu mobile-nav">
+        <div class="x">&#10006</div>
+        <ul>
+            <li class="all">
+                <a href="index.html#top">Home</a>
+            </li>
+            <li>
+                <a href="https://www.etsy.com/shop/greidientstudios" target="_blank">Store</a>
+            </li>
+            <li>
+                <a href="resume.html">Resume</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--CONTENT-->
+
+    <div class="main" id="top">
+        <div class="grid">
+
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer"></div>
+
+            <div class="grid-item">
+                <p>
+                    <strong>Autumn 2018</strong>
+                    <br>
+                    <br> Because my backpack lacked a side pocket, I designed a product that would make it easy to access my water bottle. The contouring capabilities of CNC machining enabled an elegant adaptation of the V block in holding round objects. The magnet attaches to the steel cylinder strapped to the bottle, and it can be easily removed by simply twisting. The shape of the Hydromag enables the turning motion to be much easier than pulling straight out. The clip (taken from a tape measure) enables the holder to be placed on a belt or backpack, and the hose clamp adjusts to various sizes of water bottles. In prototyping the Hydromag, I didn’t acheive an ideal holding strength, but I felt that ordering stronger magnets would solve the issue. Based on magnetic strength calculations, the new one could have held a water bottle, but I neglected to account for the smaller area of the steel cylinder compared to estimates based on larger plates. In its current form, the strength of the attraction of the steel to the magnet is not enough to support a full water bottle. The geometry of the aluminum piece worked out really well in demonstrating the motion of detaching the bottle, and I really want to get a handle on the magnetic holding for future iterations of the Hydromag.
+                </p>
+            </div>
+
+            <div class="grid-item">
+                <img src="assets/hydromag/set.jpg">
+                <p>Hydromag with accompanying hose clamp and steel cylinder</p>
+            </div>
+
+            <div class="grid-item">
+                <p>
+                    <br> Designing the CAM with the part flip in mind was the most challenging task. I had to create additional coordinate systems in Solidworks in order to account for facing operations and the two sides that needed to be machined. I faced 4 sides of my stock and machined a datum corner, but the first cut on the back side ended up shifted about 0.030″ in the x-direction from where I expected it to be in the CAD. Because I didn’t face the remaining two sides, I couldn’t get accurate measurements of the error, and I couldn’t confidently make changes to account for it. The cut on the part flip was offset from the back side and resulted in a fairly loose fit for the steel cylinder. This had a negative effect on the holding ability, but fortunately, the remaining cosmetic errors could be ground and filed away. Otherwise, using wax workholding was much more straightforward than I thought it would be. The main lesson from this project was the importance of ensuring reliable reference geometries from the start.
+                </p>
+            </div>
+
+            <div class="grid-item">
+                <img src="assets/hydromag/bottle.jpg">
+                <p>Attached to the water bottle</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="assets/hydromag/back.jpg">
+                <p>Back side before using wax</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="assets/hydromag/front.jpg">
+                <p>Front side after using wax</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer">
+            <div class="footwrap">
+                <div class="return">
+                    <a href="#top">&#710</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/rellax.min.js"></script>
+    <script src="js/vendor/masonry.pkgd.min.js"></script>
+    <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+
+        var $grid = $('.grid').masonry({
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer',
+            percentPosition: true
+        });
+
+        $grid.imagesLoaded(function () {
+            $grid.masonry('layout');
+        });
+
+        $(window).resize(function () {
+            setTimeout(function () {
+                $grid.masonry('layout');
+            }, 250);
+        });
+    </script>
+</body>
+
+</html>

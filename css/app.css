@@ -172,6 +172,10 @@
 		background: url('../assets/hydromag/hydromag.jpg') center center;
 	}
 
+	#hero-prlcnc {
+		background: url('../assets/prlcnc/prlcnc.jpg') center center;
+	}
+
 	#hero-contact:before, #hero-about:before, #hero-resume:before {
 		content: '';
 		position: absolute;
@@ -704,10 +708,6 @@
 	    height:100%;
 	    width:100%;
 	    position:absolute;
-	}
-
-	.video-responsive .streamable {
-		top: -2%;
 	}
 
 	/* Small only */
